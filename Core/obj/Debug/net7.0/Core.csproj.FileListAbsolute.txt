@@ -9,3 +9,14 @@ C:\Users\charl\RiderProjects\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.dl
 C:\Users\charl\RiderProjects\Compulsoryassignment2\Core\obj\Debug\net7.0\refint\Core.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.pdb
 C:\Users\charl\RiderProjects\Compulsoryassignment2\Core\obj\Debug\net7.0\ref\Core.dll
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\bin\Debug\net7.0\Core.deps.json
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\bin\Debug\net7.0\Core.dll
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\bin\Debug\net7.0\Core.pdb
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.AssemblyInfoInputs.cache
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.AssemblyInfo.cs
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.dll
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\refint\Core.dll
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\Core.pdb
+C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Core\obj\Debug\net7.0\ref\Core.dll

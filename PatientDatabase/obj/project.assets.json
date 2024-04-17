@@ -1282,35 +1282,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\charl\\.nuget\\packages\\": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
       "projectName": "PatientDatabase",
-      "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
-      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj"
             }
           }
         }
@@ -1356,7 +1353,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

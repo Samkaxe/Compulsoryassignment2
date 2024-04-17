@@ -1,64 +1,31 @@
 version: '3.8'
 
-services:
-  #http://localhost:5342/
-  seq-server:
-    image: datalust/seq
-    ports:
-      - "5341:5341"
-      - "5342:80"
-    environment:
-      - ACCEPT_EULA=Y
-    networks:
-      - mynetwork
-  # http://127.0.0.1:9411/zipkin/
-  zipkin:
-    image: openzipkin/zipkin
-    ports:
-      - "9411:9411"
-    networks:
-      - mynetwork
-      
-  measurementservice:
+services: 
+  patient-service:
     build:
-      context: ./
-      dockerfile: MeasurementService/Dockerfile
-    ports:
-      - "8001:80"
-    networks:
-      - mynetwork
-
-  patientservice:
-    build:
-      context: ./
+      context: .
       dockerfile: PatientService/Dockerfile
+    image: publicaccount123/patient-service:latest
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80;http://+:443
     ports:
-      - "8002:80"
-    networks:
-      - mynetwork
-
-  measurementdatabase:
+      - 7000:80
+  
+  measurement-service:
     build:
-      context: ./
-      dockerfile: MeasurementDatabase/Dockerfile
-    volumes:
-      - measurementdb:/var/lib/sqlite
-    networks:
-      - mynetwork
-
-  patientdatabase:
-    build:
-      context: ./
-      dockerfile: PatientDatabase/Dockerfile
-    volumes:
-      - patientdb:/var/lib/sqlite
-    networks:
-      - mynetwork
-
+      context: .
+      dockerfile: MeasurementService/Dockerfile
+    image: publicaccount123/measurement-service:latest
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80;http://+:443
+    ports:
+      - 7001:80
+      
+      
 networks:
-  mynetwork:
+  network:
+    name: system-network
     driver: bridge
-
-volumes:
-  measurementdb:
-  patientdb:
+    

@@ -1,4 +1,5 @@
 using MeasurementDatabase;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,10 +9,18 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
 
+builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
+builder.Services.AddDbContext<MeasurementDbContext>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope()) 
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<MeasurementDbContext>(); 
+    context.Database.Migrate(); // This line applies the migrations 
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
