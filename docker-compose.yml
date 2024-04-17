@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: PatientService/Dockerfile
-    image: publicaccount123/dls_assignment:latest
+    image: publicaccount123/patient-service:latest
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80;http://+:443
