@@ -32,4 +32,17 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - 
+      - name: Build Docker images
+        run: docker-compose build
+        
+      - name: Connect to DockerHub
+        run: docker login -u publicaccount123 -p dckr_pat_mxlDyYHHTiDfkvhXWb0II2xOuRc
+        
+      - name: Push images to registry
+        run: |
+            for image in $(docker-compose config --services); do
+              docker push your-dockerhub-username/$image:latest
+            done
+
+
+        

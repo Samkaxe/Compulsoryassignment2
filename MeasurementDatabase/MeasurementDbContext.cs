@@ -10,6 +10,6 @@ public class MeasurementDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=../MeasurementDatabase/measurement.db");
+        optionsBuilder.UseSqlite("Data Source=measurement.db");
     }
 }
