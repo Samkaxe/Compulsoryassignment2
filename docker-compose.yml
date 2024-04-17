@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  #http://localhost:5342/
+  seq-server:
+    image: datalust/seq
+    ports:
+      - "5341:5341"
+      - "5342:80"
+    environment:
+      - ACCEPT_EULA=Y
+    networks:
+      - mynetwork
+  # http://127.0.0.1:9411/zipkin/
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - mynetwork
+      
+  measurementservice:
+    build:
+      context: ./
+      dockerfile: MeasurementService/Dockerfile
+    ports:
+      - "8001:80"
+    networks:
+      - mynetwork
+
+  patientservice:
+    build:
+      context: ./
+      dockerfile: PatientService/Dockerfile
+    ports:
+      - "8002:80"
+    networks:
+      - mynetwork
+
+  measurementdatabase:
+    build:
+      context: ./
+      dockerfile: MeasurementDatabase/Dockerfile
+    volumes:
+      - measurementdb:/var/lib/sqlite
+    networks:
+      - mynetwork
+
+  patientdatabase:
+    build:
+      context: ./
+      dockerfile: PatientDatabase/Dockerfile
+    volumes:
+      - patientdb:/var/lib/sqlite
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  measurementdb:
+  patientdb:
