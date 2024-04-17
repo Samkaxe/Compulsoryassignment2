@@ -1,0 +1,43 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  measurement-service:
+    build:
+      context: "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2"
+      dockerfile: "MeasurementService/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/MeasurementService.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "measurementservice:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Bruger\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\\
+      MeasurementService:/app:rw"
+    - "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2:/src:rw"
+    working_dir: "/app"
+  patient-service:
+    build:
+      context: "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2"
+      dockerfile: "PatientService/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/PatientService.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "patientservice:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\Bruger\\.nuget\\packages:/root/.nuget/packages"
+    - "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\\
+      PatientService:/app:rw"
+    - "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2:/src:rw"
+    working_dir: "/app"

@@ -6,13 +6,14 @@ public class PatientRepository : IPatientRepository
 {
     private readonly PatientDbContext _context;
 
-    public PatientRepository()
+    public PatientRepository(PatientDbContext context)
     {
-        _context = new PatientDbContext();
+        _context = context;
     }
 
     public List<Patient> GetAllPatients()
     {
+        // _context.Database.EnsureCreated();
         return _context.Patients.ToList();
     }
 

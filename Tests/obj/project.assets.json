@@ -694,6 +694,19 @@
           }
         }
       },
+      "Moq.EntityFrameworkCore/7.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0",
+          "Moq": "4.18.1"
+        },
+        "compile": {
+          "lib/net6.0/Moq.EntityFrameworkCore.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Moq.EntityFrameworkCore.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -3547,6 +3560,19 @@
         "moq.4.20.70.nupkg.sha512",
         "moq.nuspec",
         "readme.md"
+      ]
+    },
+    "Moq.EntityFrameworkCore/7.0.0.2": {
+      "sha512": "YRCJDexTyvx6ilJ+vMK42+wmUiVNmv4aYSpGC0y8j5YU+K1T94WsZHXiF4B3xU4eYmuzlBStXJeLxk4Hke7t2Q==",
+      "type": "package",
+      "path": "moq.entityframeworkcore/7.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Moq.EntityFrameworkCore.dll",
+        "moq.entityframeworkcore.7.0.0.2.nupkg.sha512",
+        "moq.entityframeworkcore.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -7324,6 +7350,7 @@
       "MeasurementService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.7.1",
       "Moq >= 4.20.70",
+      "Moq.EntityFrameworkCore >= 7.0.0.2",
       "PatientDatabase >= 1.0.0",
       "PatientService >= 1.0.0",
       "coverlet.collector >= 3.2.0",
@@ -7332,44 +7359,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\charl\\.nuget\\packages\\": {}
+    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\obj\\",
+      "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj",
+      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
-              "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
             },
-            "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
-              "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj"
             },
-            "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
-              "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
             },
-            "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
-              "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj"
+            "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
+              "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj"
             }
           }
         }
@@ -7391,6 +7415,10 @@
           "Moq": {
             "target": "Package",
             "version": "[4.20.70, )"
+          },
+          "Moq.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.0.2, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -7425,7 +7453,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
