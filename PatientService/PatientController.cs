@@ -1,6 +1,7 @@
 ﻿using Core;
 using Microsoft.AspNetCore.Mvc;
 using PatientDatabase;
+using Status = OpenTelemetry.Trace.Status;
 
 namespace PatientService;
 
@@ -16,10 +17,24 @@ public class PatientController : ControllerBase
     }
 
     [HttpGet]
+    [HttpGet]
     public ActionResult<IEnumerable<Patient>> GetAllPatients()
     {
-        var patients = _patientRepository.GetAllPatients();
-        return Ok(patients);
+        using var activity = TelemetryActivitySource.Instance.StartActivity("PatientService.API");
+        try
+        {
+            var patients = _patientRepository.GetAllPatients();
+            return Ok(patients);
+        }
+        catch (Exception ex)
+        {
+           // activity?.SetStatus(Status.Error.WithDescription(ex.Message));
+            throw;
+        }
+        finally
+        {
+            activity?.Stop();
+        }
     }
 
     [HttpGet("{ssn}")]

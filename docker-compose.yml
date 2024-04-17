@@ -11,14 +11,15 @@ services:
     environment:
       - ACCEPT_EULA=Y
     networks:
-      - system-network
+      - network
+  
   # http://127.0.0.1:9411/zipkin/
   zipkin:
     image: openzipkin/zipkin
     ports:
       - "9411:9411"
     networks:
-      - system-network
+      - network
   
   patient-service:
     build:
@@ -30,6 +31,8 @@ services:
       - ASPNETCORE_URLS=http://+:80;http://+:443
     ports:
       - 7000:80
+    networks:
+      - network
   
   measurement-service:
     build:
@@ -41,10 +44,10 @@ services:
       - ASPNETCORE_URLS=http://+:80;http://+:443
     ports:
       - 7001:80
-      
-      
+    networks:
+      - network
+
 networks:
   network:
-    name: system-network
+    name: network
     driver: bridge
-    

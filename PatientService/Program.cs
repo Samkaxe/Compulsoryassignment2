@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using PatientDatabase;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -10,6 +12,18 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(builder => builder.AddService("PatientService"))
+    .WithTracing(builder =>
+        {
+            builder
+                .AddZipkinExporter(options =>
+                    options.Endpoint = new Uri("http://zipkin:9411/api/v2/spans"))
+                .AddSource("PatientService.API")
+                .SetSampler(new AlwaysOnSampler())
+                .AddAspNetCoreInstrumentation();
+        }
+    );
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddDbContext<PatientDbContext>();
 
