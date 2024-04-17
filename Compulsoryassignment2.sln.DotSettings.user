@@ -1,12 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">ERROR</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=424e7df1_002D1818_002D47f9_002D8a6d_002D846ae84d3cb7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllPatients_ReturnsListOfPatients" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=424e7df1_002D1818_002D47f9_002D8a6d_002D846ae84d3cb7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllPatients_ReturnsListOfPatients" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5F259741-B329-45BD-B889-57F929631AEA::net7.0::Tests.UnitTest1.GetAllPatients_ReturnsListOfPatients&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F259741-B329-45BD-B889-57F929631AEA::net7.0::Tests.PatientRepositoryTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f4169cca_002Db0b5_002D48d5_002D96df_002Dfffbbb62e79b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetAllPatients_ReturnsListOfPatients #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f4169cca_002Db0b5_002D48d5_002D96df_002Dfffbbb62e79b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetAllPatients_ReturnsListOfPatients #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::5F259741-B329-45BD-B889-57F929631AEA::net7.0::Tests.UnitTest1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::5F259741-B329-45BD-B889-57F929631AEA::net7.0::Tests.PatientRepositoryTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

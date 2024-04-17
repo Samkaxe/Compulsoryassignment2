@@ -2,11 +2,11 @@
 
 namespace PatientDatabase;
 
-public class PatientRepository : IPatientRepository
+public class PatientController : IPatientRepository
 {
     private readonly PatientDbContext _context;
 
-    public PatientRepository()
+    public PatientController()
     {
         _context = new PatientDbContext();
     }
