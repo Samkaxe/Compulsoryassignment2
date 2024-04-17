@@ -112,7 +112,7 @@ public class PatientRepositoryTests
 
         var repository = new PatientRepository(mockContext.Object);
 
-        // Act
+        // Act 
         repository.DeletePatient(ssnToDelete);
 
         // Assert
