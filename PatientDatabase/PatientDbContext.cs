@@ -5,7 +5,7 @@ namespace PatientDatabase;
 
 public class PatientDbContext : DbContext
 {
-    public DbSet<Patient> Patients { get; set; }
+    public virtual DbSet<Patient> Patients { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     { 
