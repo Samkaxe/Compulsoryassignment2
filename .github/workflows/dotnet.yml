@@ -42,7 +42,7 @@ jobs:
       - name: Push images to registry
         run: |
             for image in $(docker-compose config --services); do
-              docker push your-dockerhub-username/$image:latest
+              docker push publicaccount123/$image:latest
             done
 
 
