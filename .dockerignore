@@ -25,3 +25,8 @@ LICENSE
 README.md
 *.dll
 *.info
+*.log
+*.map
+*.pdb
+*.xml
+*.info

@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj": {}
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,34 +56,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
         "projectName": "MeasurementDatabase",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj"
               }
             }
           }
@@ -126,34 +132,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
         "projectName": "MeasurementService",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
               }
             }
           }
@@ -196,34 +205,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
         "projectName": "PatientDatabase",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Core\\Core.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj"
               }
             }
           }
@@ -269,34 +281,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj",
         "projectName": "PatientService",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
               }
             }
           }
@@ -345,43 +360,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj": {
+    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj",
+        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj",
         "projectName": "Tests",
-        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\Tests.csproj",
-        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\Tests\\obj\\",
+        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
               },
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj"
               },
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientDatabase\\PatientDatabase.csproj"
               },
-              "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
-                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\DBD_Synopsis_Project\\Compulsoryassignment2\\PatientService\\PatientService.csproj"
+              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj": {
+                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj"
               }
             }
           }
@@ -441,7 +459,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
