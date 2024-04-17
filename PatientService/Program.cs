@@ -9,11 +9,18 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IPatientRepository, PatientRepository>();
 
-
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+builder.Services.AddDbContext<PatientDbContext>();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope()) 
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<PatientDbContext>(); 
+    context.Database.Migrate();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
