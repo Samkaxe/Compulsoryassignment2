@@ -39,6 +39,10 @@ public class PatientRepositoryTests
         mockContext.Setup(context => context.Patients)
             .ReturnsDbSet(mockData);
 
-        // var repository = new PatientC
+        var repository = new PatientRepository(mockContext.Object);
+
+        var patients = repository.GetAllPatients();
+        
+        Assert.Equal(mockData,patients);
     }
 }
