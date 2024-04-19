@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aH8Cl4EQZOYX2fs6Dvu7XUGpRAdxbOqflgUPL882V9vY6kQ0VwHG2/CrO7etcQqKOdLtsbffqneU2qVYr54qCQ==",
+  "dgSpecHash": "5dzpXnsV6x2tMizQtPqY/UDiEKBmh1GYG+QS4ZuIIHFTP6YCoRfr5B4y5G4597vZscwM1a6MA3F0XFo4Mk3vXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,8 @@
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.diagnostics.abstractions\\8.0.0\\microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\8.0.0\\microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.0\\microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\microsoft.extensions.logging.configuration\\8.0.0\\microsoft.extensions.logging.configuration.8.0.0.nupkg.sha512",
@@ -33,6 +35,7 @@
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.api\\1.8.0\\opentelemetry.api.1.8.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.api.providerbuilderextensions\\1.8.0\\opentelemetry.api.providerbuilderextensions.1.8.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.exporter.zipkin\\1.8.0\\opentelemetry.exporter.zipkin.1.8.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.8.0\\opentelemetry.extensions.hosting.1.8.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.8.1\\opentelemetry.instrumentation.aspnetcore.1.8.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.8.1\\opentelemetry.instrumentation.http.1.8.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",

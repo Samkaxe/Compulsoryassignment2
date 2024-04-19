@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System.Diagnostics;
+using Core;
 using Microsoft.AspNetCore.Mvc;
 using PatientDatabase;
 using Status = OpenTelemetry.Trace.Status;
@@ -6,64 +7,86 @@ using Status = OpenTelemetry.Trace.Status;
 namespace PatientService;
 
 [ApiController]
-[Route("api/[controller]")]
-public class PatientController : ControllerBase
-{
-    private readonly IPatientRepository _patientRepository;
-
-    public PatientController(IPatientRepository patientRepository)
+    [Route("api/[controller]")]
+    public class PatientController : ControllerBase
     {
-        _patientRepository = patientRepository;
-    }
+        private readonly IPatientRepository _patientRepository;
+        private readonly ActivitySource _activitySource = TelemetryActivitySource.Instance;
 
-    [HttpGet]
-    [HttpGet]
-    public ActionResult<IEnumerable<Patient>> GetAllPatients()
-    {
-        using var activity = TelemetryActivitySource.Instance.StartActivity("PatientService.API");
-        try
+        public PatientController(IPatientRepository patientRepository)
         {
-            var patients = _patientRepository.GetAllPatients();
-            return Ok(patients);
+            _patientRepository = patientRepository;
         }
-        catch (Exception ex)
-        {
-           // activity?.SetStatus(Status.Error.WithDescription(ex.Message));
-            throw;
-        }
-        finally
-        {
-            activity?.Stop();
-        }
-    }
 
-    [HttpGet("{ssn}")]
-    public ActionResult<Patient> GetPatientBySSN(string ssn)
-    {
-        var patient = _patientRepository.GetPatientBySSN(ssn);
-        if (patient == null)
+        [HttpGet]
+        public ActionResult<IEnumerable<Patient>> GetAllPatients()
         {
-            return NotFound();
+            using var activity = _activitySource.StartActivity("GetAllPatients");
+            try
+            {
+                var patients = _patientRepository.GetAllPatients();
+                return Ok(patients);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
-        return Ok(patient);
-    }
 
-    [HttpPost]
-    public IActionResult AddPatient(Patient patient)
-    {
-        _patientRepository.AddPatient(patient);
-        return CreatedAtAction(nameof(GetPatientBySSN), new { ssn = patient.SSN }, patient);
-    }
-
-    [HttpDelete("{ssn}")]
-    public IActionResult DeletePatient(string ssn)
-    {
-        var patientToDelete = _patientRepository.GetPatientBySSN(ssn);
-        if (patientToDelete == null)
+        [HttpGet("{ssn}")]
+        public ActionResult<Patient> GetPatientBySSN(string ssn)
         {
-            return NotFound();
+            using var activity = _activitySource.StartActivity("GetPatientBySSN");
+            try
+            {
+                var patient = _patientRepository.GetPatientBySSN(ssn);
+                if (patient == null)
+                {
+                    return NotFound();
+                }
+                return Ok(patient);
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
+            }
         }
-        _patientRepository.DeletePatient(ssn);
-        return NoContent();
+
+        [HttpPost]
+        public IActionResult AddPatient(Patient patient)
+        {
+            using var activity = _activitySource.StartActivity("AddPatient");
+            try
+            {
+                _patientRepository.AddPatient(patient);
+                return CreatedAtAction(nameof(GetPatientBySSN), new { ssn = patient.SSN }, patient);
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
+            }
+        }
+
+        [HttpDelete("{ssn}")]
+        public IActionResult DeletePatient(string ssn)
+        {
+            using var activity = _activitySource.StartActivity("DeletePatient");
+            try
+            {
+                var patientToDelete = _patientRepository.GetPatientBySSN(ssn);
+                if (patientToDelete == null)
+                {
+                    return NotFound();
+                }
+                _patientRepository.DeletePatient(ssn);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                
+                throw;
+            }
+        }
     }
-}

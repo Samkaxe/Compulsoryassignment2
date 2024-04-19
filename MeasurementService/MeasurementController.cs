@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.Metrics;
+﻿using System.Diagnostics;
+using System.Diagnostics.Metrics;
 using Core;
 using MeasurementDatabase;
 using Microsoft.AspNetCore.Mvc;
@@ -6,51 +7,83 @@ using Microsoft.AspNetCore.Mvc;
 namespace MeasurementService;
 
 [ApiController]
-[Route("api/[controller]")]
-public class MeasurementController : ControllerBase
-{
-    private readonly IMeasurementRepository _measurementRepository;
-
-    public MeasurementController(IMeasurementRepository measurementRepository)
+    [Route("api/[controller]")]
+    public class MeasurementController : ControllerBase
     {
-        _measurementRepository = measurementRepository;
-    }
-    
+        private readonly IMeasurementRepository _measurementRepository;
+        private readonly ActivitySource _activitySource = TelemetryActivitySource.Instance;
 
-    [HttpGet]
-    public ActionResult<IEnumerable<Measurements>> GetAllMeasurements()
-    {
-        var measurements = _measurementRepository.GetAllMeasurements();
-        return Ok(measurements);
-    }
-
-    [HttpGet("{id}")]
-    public ActionResult<Measurements> GetMeasurementById(int id)
-    {
-        var measurement = _measurementRepository.GetMeasurementById(id);
-        if (measurement == null)
+        public MeasurementController(IMeasurementRepository measurementRepository)
         {
-            return NotFound();
+            _measurementRepository = measurementRepository;
         }
-        return Ok(measurement);
-    }
 
-    [HttpPost]
-    public IActionResult AddMeasurement(Measurements measurement)
-    {
-        _measurementRepository.AddMeasurement(measurement);
-        return CreatedAtAction(nameof(GetMeasurementById), new { id = measurement.Id }, measurement);
-    }
-
-    [HttpDelete("{id}")]
-    public IActionResult DeleteMeasurement(int id)
-    {
-        var measurementToDelete = _measurementRepository.GetMeasurementById(id);
-        if (measurementToDelete == null)
+        [HttpGet]
+        public ActionResult<IEnumerable<Measurements>> GetAllMeasurements()
         {
-            return NotFound();
+            using var activity = _activitySource.StartActivity("GetAllMeasurements");
+            try
+            {
+                var measurements = _measurementRepository.GetAllMeasurements();
+                return Ok(measurements);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
-        _measurementRepository.DeleteMeasurement(id);
-        return NoContent();
+
+        [HttpGet("{id}")]
+        public ActionResult<Measurements> GetMeasurementById(int id)
+        {
+            using var activity = _activitySource.StartActivity("GetMeasurementById");
+            try
+            {
+                var measurement = _measurementRepository.GetMeasurementById(id);
+                if (measurement == null)
+                {
+                    return NotFound();
+                }
+                return Ok(measurement);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        [HttpPost]
+        public IActionResult AddMeasurement(Measurements measurement)
+        {
+            using var activity = _activitySource.StartActivity("AddMeasurement");
+            try
+            {
+                _measurementRepository.AddMeasurement(measurement);
+                return CreatedAtAction(nameof(GetMeasurementById), new { id = measurement.Id }, measurement);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteMeasurement(int id)
+        {
+            using var activity = _activitySource.StartActivity("DeleteMeasurement");
+            try
+            {
+                var measurementToDelete = _measurementRepository.GetMeasurementById(id);
+                if (measurementToDelete == null)
+                {
+                    return NotFound();
+                }
+                _measurementRepository.DeleteMeasurement(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
     }
-}

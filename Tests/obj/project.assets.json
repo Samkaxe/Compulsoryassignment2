@@ -2685,6 +2685,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.11",
           "OpenTelemetry": "1.8.0",
           "OpenTelemetry.Exporter.Zipkin": "1.8.0",
+          "OpenTelemetry.Extensions.Hosting": "1.8.0",
           "OpenTelemetry.Instrumentation.AspNetCore": "1.8.1",
           "OpenTelemetry.Instrumentation.Http": "1.8.1",
           "Swashbuckle.AspNetCore": "6.5.0"

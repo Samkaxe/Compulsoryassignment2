@@ -10,8 +10,6 @@ C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -124,3 +122,15 @@ C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\Pati
 C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\PatientDatabase\obj\Debug\net7.0\PatientDatabase.pdb
 C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\PatientDatabase\obj\Debug\net7.0\PatientDatabase.genruntimeconfig.cache
 C:\Users\Bruger\Documents\GitHub\DBD_Synopsis_Project\Compulsoryassignment2\PatientDatabase\obj\Debug\net7.0\ref\PatientDatabase.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.Api.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.Api.ProviderBuilderExtensions.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.Exporter.Zipkin.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.Instrumentation.AspNetCore.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\OpenTelemetry.Instrumentation.Http.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
