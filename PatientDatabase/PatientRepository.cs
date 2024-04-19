@@ -1,54 +1,78 @@
-﻿using Core;
-using Status = OpenTelemetry.Trace.Status;
+﻿ using System.Diagnostics;
+ using Core;
+ using OpenTelemetry.Trace;
+ using PatientDatabase;
+ using Status = OpenTelemetry.Trace.Status;
 
-namespace PatientDatabase;
-
-public class PatientRepository : IPatientRepository
-{
-    private readonly PatientDbContext _context;
-
-    public PatientRepository(PatientDbContext context)
+ public class PatientRepository : IPatientRepository
     {
-        
-        _context = context;
-    }
+        private readonly PatientDbContext _context;
+        private readonly ActivitySource _activitySource = TelemetryActivitySource.Instance;
 
-    public List<Patient> GetAllPatients()
-    {
-        using var activity = TelemetryActivitySource.Instance.StartActivity("PatientRepository.GET-Method");
-        try
+        public PatientRepository(PatientDbContext context)
         {
-            return _context.Patients.ToList();
+            _context = context;
         }
-        catch (Exception ex)
-        {
-            //   activity?.SetStatus(Status.Error.WithDescription(ex.Message));
-            throw;
-        }
-        finally
-        {
-            activity?.Stop();
-        }
-    }
 
-    public Patient GetPatientBySSN(string ssn)
-    {
-        return _context.Patients.FirstOrDefault(p => p.SSN == ssn);
-    }
-
-    public void AddPatient(Patient patient)
-    {
-        _context.Patients.Add(patient);
-        _context.SaveChanges();
-    }
-
-    public void DeletePatient(string ssn)
-    {
-        var patientToDelete = _context.Patients.FirstOrDefault(p => p.SSN == ssn);
-        if (patientToDelete != null)
+        public List<Patient> GetAllPatients()
         {
-            _context.Patients.Remove(patientToDelete);
-            _context.SaveChanges();
+            using var activity = _activitySource.StartActivity("GetAllPatients");
+            try
+            {
+                return _context.Patients.ToList();
+            }
+            catch (Exception ex)
+            {
+                activity?.SetStatus(Status.Error.WithDescription(ex.Message));
+                throw;
+            }
+        }
+
+        public Patient GetPatientBySSN(string ssn)
+        {
+            using var activity = _activitySource.StartActivity("GetPatientBySSN");
+            try
+            {
+                return _context.Patients.FirstOrDefault(p => p.SSN == ssn);
+            }
+            catch (Exception ex)
+            {
+                activity?.SetStatus(Status.Error.WithDescription(ex.Message));
+                throw;
+            }
+        }
+
+        public void AddPatient(Patient patient)
+        {
+            using var activity = _activitySource.StartActivity("AddPatient");
+            try
+            {
+                _context.Patients.Add(patient);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                activity?.SetStatus(Status.Error.WithDescription(ex.Message));
+                throw;
+            }
+        }
+
+        public void DeletePatient(string ssn)
+        {
+            using var activity = _activitySource.StartActivity("DeletePatient");
+            try
+            {
+                var patientToDelete = _context.Patients.FirstOrDefault(p => p.SSN == ssn);
+                if (patientToDelete != null)
+                {
+                    _context.Patients.Remove(patientToDelete);
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                activity?.SetStatus(Status.Error.WithDescription(ex.Message));
+                throw;
+            }
         }
     }
-}

@@ -1,5 +1,7 @@
 using MeasurementDatabase;
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,20 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
 builder.Services.AddDbContext<MeasurementDbContext>();
+
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(builder => builder.AddService("MeasurementService"))
+    .WithTracing(builder =>
+        {
+            builder
+                .AddZipkinExporter(options =>
+                    options.Endpoint = new Uri("http://zipkin:9411/api/v2/spans"))
+                .AddSource("MeasurementService.API")
+                .SetSampler(new AlwaysOnSampler())
+                .AddAspNetCoreInstrumentation();
+        }
+    );
+
 
 var app = builder.Build();
 
@@ -29,7 +45,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

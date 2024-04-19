@@ -205,6 +205,10 @@
               "target": "Package",
               "version": "[1.8.0, )"
             },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.8.0, )"
+            },
             "OpenTelemetry.Instrumentation.AspNetCore": {
               "target": "Package",
               "version": "[1.8.1, )"
