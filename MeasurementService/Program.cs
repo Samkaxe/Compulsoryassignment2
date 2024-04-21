@@ -2,6 +2,8 @@ using MeasurementDatabase;
 using Microsoft.EntityFrameworkCore;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
+using Serilog;
+using ILogger = Serilog.ILogger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,13 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IMeasurementRepository, MeasurementRepository>();
 builder.Services.AddDbContext<MeasurementDbContext>();
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Seq("http://localhost:5341") 
+    .WriteTo.Console()
+    .CreateLogger();
+
 
 builder.Services.AddOpenTelemetry()
     .ConfigureResource(builder => builder.AddService("MeasurementService"))
@@ -29,6 +38,8 @@ builder.Services.AddOpenTelemetry()
     );
 
 
+
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope()) 
@@ -37,6 +48,8 @@ using (var scope = app.Services.CreateScope())
     var context = services.GetRequiredService<MeasurementDbContext>(); 
     context.Database.Migrate(); // This line applies the migrations 
 }
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

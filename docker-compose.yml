@@ -4,14 +4,13 @@ services:
   
   #http://localhost:5342/
   seq-server:
-    image: datalust/seq
+    image: datalust/seq:latest
     ports:
       - "5341:5341"
       - "5342:80"
     environment:
       - ACCEPT_EULA=Y
-    networks:
-      - network
+    restart: unless-stopped
   
   # http://127.0.0.1:9411/zipkin/
   zipkin:

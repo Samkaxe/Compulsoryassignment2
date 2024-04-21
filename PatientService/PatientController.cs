@@ -2,6 +2,7 @@
 using Core;
 using Microsoft.AspNetCore.Mvc;
 using PatientDatabase;
+using Serilog;
 using Status = OpenTelemetry.Trace.Status;
 
 namespace PatientService;
@@ -29,6 +30,7 @@ namespace PatientService;
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "An error occurred while processing GetAllPatients");
                 throw;
             }
         }
@@ -48,7 +50,7 @@ namespace PatientService;
             }
             catch (Exception ex)
             {
-                
+                Log.Error(ex, "An error occurred while processing GetPatientBySSN for SSN: {SSN}", ssn);
                 throw;
             }
         }
@@ -64,7 +66,7 @@ namespace PatientService;
             }
             catch (Exception ex)
             {
-                
+                Log.Error(ex, "An error occurred while processing AddPatient");
                 throw;
             }
         }
@@ -85,7 +87,7 @@ namespace PatientService;
             }
             catch (Exception ex)
             {
-                
+                Log.Error(ex, "An error occurred while processing DeletePatient for SSN: {SSN}", ssn);
                 throw;
             }
         }
