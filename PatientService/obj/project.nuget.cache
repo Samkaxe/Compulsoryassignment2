@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oJ4BE2TF+rFUF7p/+qjGY5WWsI0NYDdcR0KCS4X+RQnDF60O29aNHOn2efRy5lPwaWCLBbsVoSyXn5/o+F1+KA==",
+  "dgSpecHash": "6DvS9o6c+4fRDz/8AND95dgf7wIvjy4kQqYGdFNHC4OH+VpaPoexbdEA8qYm2QPuImb+bfJc5vmmlthpxOUAVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\PatientService\\PatientService.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,11 @@
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.8.0\\opentelemetry.extensions.hosting.1.8.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.8.1\\opentelemetry.instrumentation.aspnetcore.1.8.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.8.1\\opentelemetry.instrumentation.http.1.8.1.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog\\4.0.0-dev-02122\\serilog.4.0.0-dev-02122.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.periodicbatching\\4.0.0\\serilog.sinks.periodicbatching.4.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.seq\\7.0.0\\serilog.sinks.seq.7.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
@@ -53,7 +58,8 @@
     "C:\\Users\\charl\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\charl\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\charl\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

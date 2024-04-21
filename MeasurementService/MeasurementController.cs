@@ -3,13 +3,14 @@ using System.Diagnostics.Metrics;
 using Core;
 using MeasurementDatabase;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace MeasurementService;
-
 [ApiController]
     [Route("api/[controller]")]
     public class MeasurementController : ControllerBase
     {
+        
         private readonly IMeasurementRepository _measurementRepository;
         private readonly ActivitySource _activitySource = TelemetryActivitySource.Instance;
 
@@ -21,6 +22,7 @@ namespace MeasurementService;
         [HttpGet]
         public ActionResult<IEnumerable<Measurements>> GetAllMeasurements()
         {
+            Log.Warning("Getting all measurements");
             using var activity = _activitySource.StartActivity("GetAllMeasurements");
             try
             {
@@ -29,6 +31,7 @@ namespace MeasurementService;
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "An error occurred while processing GetAllMeasurements");
                 throw;
             }
         }
@@ -48,6 +51,7 @@ namespace MeasurementService;
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "An error occurred while processing GetMeasurementById with id {Id}", id);
                 throw;
             }
         }
@@ -63,6 +67,7 @@ namespace MeasurementService;
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "An error occurred while processing AddMeasurement");
                 throw;
             }
         }
@@ -83,6 +88,7 @@ namespace MeasurementService;
             }
             catch (Exception ex)
             {
+                Log.Error(ex, "An error occurred while processing DeleteMeasurement with id {Id}", id);
                 throw;
             }
         }

@@ -217,6 +217,18 @@
               "target": "Package",
               "version": "[1.8.1, )"
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.0-dev-02122, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -407,6 +419,18 @@
             "OpenTelemetry.Instrumentation.Http": {
               "target": "Package",
               "version": "[1.8.1, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[4.0.0-dev-02122, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

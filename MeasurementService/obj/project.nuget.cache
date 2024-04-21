@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5dzpXnsV6x2tMizQtPqY/UDiEKBmh1GYG+QS4ZuIIHFTP6YCoRfr5B4y5G4597vZscwM1a6MA3F0XFo4Mk3vXg==",
+  "dgSpecHash": "RwU2MswusDKUjbK7YPSRSkn1wd2rC0hnhOtLeTBVuEw9qA9L7fOn7H03+9eHFq9hc90DXtFpatuCIuIN7bhjlQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,11 @@
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.extensions.hosting\\1.8.0\\opentelemetry.extensions.hosting.1.8.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.aspnetcore\\1.8.1\\opentelemetry.instrumentation.aspnetcore.1.8.1.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\opentelemetry.instrumentation.http\\1.8.1\\opentelemetry.instrumentation.http.1.8.1.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog\\4.0.0-dev-02122\\serilog.4.0.0-dev-02122.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.periodicbatching\\4.0.0\\serilog.sinks.periodicbatching.4.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\serilog.sinks.seq\\7.0.0\\serilog.sinks.seq.7.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
@@ -49,7 +54,8 @@
     "C:\\Users\\charl\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\charl\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\charl\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\charl\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\charl\\.nuget\\packages\\system.threading.channels\\8.0.0\\system.threading.channels.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

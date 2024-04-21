@@ -172,3 +172,9 @@ C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\OpenTelemetry.Instrumentation.Http.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\Serilog.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\Serilog.Sinks.Seq.dll
+C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientService\bin\Debug\net7.0\System.Threading.Channels.dll

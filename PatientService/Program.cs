@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using PatientDatabase;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +25,14 @@ builder.Services.AddOpenTelemetry()
                 .AddAspNetCoreInstrumentation();
         }
     );
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Seq("http://localhost:5341") 
+    // setup
+    .CreateLogger();
+
+
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddDbContext<PatientDbContext>();
 
