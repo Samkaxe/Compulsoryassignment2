@@ -57,12 +57,12 @@ namespace MeasurementService;
         }
 
         [HttpPost]
-        public IActionResult AddMeasurement(Measurements measurement)
+        public async Task<IActionResult> AddMeasurement(Measurements measurement)
         {
             using var activity = _activitySource.StartActivity("AddMeasurement");
             try
             {
-                _measurementRepository.AddMeasurement(measurement);
+                await _measurementRepository.AddMeasurement(measurement);
                 return CreatedAtAction(nameof(GetMeasurementById), new { id = measurement.Id }, measurement);
             }
             catch (Exception ex)

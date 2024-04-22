@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Diagnostics.Metrics;
+using System.Net;
 using Core;
 using Status = OpenTelemetry.Trace.Status;
 
@@ -8,16 +9,19 @@ namespace MeasurementDatabase;
 public class MeasurementRepository : IMeasurementRepository
     {
         private readonly MeasurementDbContext _context;
+        private readonly IHttpClientFactory _httpClientFactory;
         private readonly ActivitySource _activitySource = TelemetryActivitySource.Instance;
 
-        public MeasurementRepository(MeasurementDbContext context)
+        public MeasurementRepository(MeasurementDbContext context, IHttpClientFactory httpClientFactory)
         {
+            _httpClientFactory = httpClientFactory;
             _context = context;
         }
 
         public List<Measurements> GetAllMeasurements()
         {
             using var activity = _activitySource.StartActivity("GetAllMeasurements");
+            
             try
             {
                 return _context.Measurements.ToList();
@@ -41,9 +45,20 @@ public class MeasurementRepository : IMeasurementRepository
             }
         }
 
-        public void AddMeasurement(Measurements measurement)
+        public async Task AddMeasurement(Measurements measurement)
         {
             using var activity = _activitySource.StartActivity("AddMeasurement");
+            
+            var httpClient = _httpClientFactory.CreateClient("PatientService");
+            httpClient.DefaultRequestHeaders.Add("Accept", "application/json"); // Ensure correct headers
+            var response = await httpClient.GetAsync($"/api/Patient/{measurement.PatientSSN}");
+            
+            if (response.StatusCode != HttpStatusCode.OK)
+            {
+                Console.WriteLine(response);
+                throw new Exception($"Patient with SSN {measurement.PatientSSN} does not exist.");
+            }
+            
             try
             {
                 _context.Measurements.Add(measurement);

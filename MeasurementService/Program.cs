@@ -47,6 +47,11 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddHttpClient("PatientService", client =>
+{
+    client.BaseAddress = new Uri("http://patient-service:80/"); // Base URL of the Patient microservice
+});
+
 
 var app = builder.Build();
 

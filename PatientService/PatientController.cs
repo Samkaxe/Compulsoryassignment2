@@ -19,7 +19,7 @@ namespace PatientService;
             _patientRepository = patientRepository;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public ActionResult<IEnumerable<Patient>> GetAllPatients()
         {
             using var activity = _activitySource.StartActivity("GetAllPatients");

@@ -6,48 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="3e7330d7-a0de-44e0-b710-2fe4d13b1b0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net7.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net7.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net7.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net7.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net7.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/IMeasurementRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/IMeasurementRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/MeasurementRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/MeasurementRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/ref/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/ref/MeasurementDatabase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/refint/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/refint/MeasurementDatabase.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementService/MeasurementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/MeasurementController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/ref/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/ref/MeasurementService.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/refint/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/refint/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientDatabase/obj/Debug/net7.0/PatientDatabase.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PatientDatabase/obj/Debug/net7.0/PatientDatabase.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientService/obj/Debug/net7.0/PatientService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/obj/Debug/net7.0/PatientService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/net7.0/Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/net7.0/Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-ui/src/app/components/measurement-input/measurement-input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/patient-ui/src/app/components/measurement-input/measurement-input.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patient-ui/src/app/services/patient.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/patient-ui/src/app/services/patient.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PatientService/PatientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/PatientController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713776666199</updated>
       <workItem from="1713776667694" duration="8422000" />
-      <workItem from="1713789201493" duration="1252000" />
+      <workItem from="1713789201493" duration="4823000" />
     </task>
     <servers />
   </component>
