@@ -1,6 +1,6 @@
-<form [formGroup]="measurementForm" (ngSubmit)="onSubmit()">
-  <div class="flex flex-col space-y-10"> <!-- Flexbox layout for spacing -->
+<form [formGroup]="measurementForm" (ngSubmit)="onSubmit()" class="flex w-full justify-center items-center">
 
+  <div class="space-y-10 w-1/2 flex flex-col">
     <!-- Date Input with Angular Material -->
     <mat-form-field appearance="fill">
       <mat-label>Date</mat-label>
@@ -37,4 +37,5 @@
     <button mat-raised-button color="primary" type="submit" [disabled]="!measurementForm.valid">Submit</button>
 
   </div>
+
 </form>
