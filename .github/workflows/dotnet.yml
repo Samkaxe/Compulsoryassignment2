@@ -43,8 +43,8 @@ jobs:
         run: |
             for image in $(docker-compose config --services); 
             do
-              if [[ $image == *"publicaccount123"* ]];
-                  docker push your-dockerhub-username/$image:latest
+              if [[ $image == *"publicaccount123"* ]]; then
+                  docker push publicaccount123/$image:latest
               fi
             done
 
