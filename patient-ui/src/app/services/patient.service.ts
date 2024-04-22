@@ -12,6 +12,8 @@ export class PatientService {
   ) { }
 
   sendMeasurement(formData: any) {
-    return this.http.post("http://localhost:7000/api/Patient",null);
+    formData['id'] = 0;
+    formData['date'] = new Date(formData['date']).toISOString();
+    return this.http.post("http://localhost:7001/api/Measurement",formData);
   }
 }

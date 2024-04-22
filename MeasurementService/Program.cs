@@ -37,10 +37,20 @@ builder.Services.AddOpenTelemetry()
         }
     );
 
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200")
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigins");
 
 using (var scope = app.Services.CreateScope()) 
 {

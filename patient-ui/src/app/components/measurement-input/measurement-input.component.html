@@ -4,7 +4,13 @@
     <!-- Date Input with Angular Material -->
     <mat-form-field appearance="fill">
       <mat-label>Date</mat-label>
-      <input matInput type="datetime-local" formControlName="date" />
+      <input matInput [matDatepicker]="picker" formControlName="date"
+             [min]="minDate"
+             [max]="maxDate" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker
+        #picker
+      ></mat-datepicker>
     </mat-form-field>
 
     <!-- Systolic Pressure Input -->
