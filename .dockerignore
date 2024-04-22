@@ -1,4 +1,5 @@
-﻿**/.dockerignore
+﻿!nginx.conf
+**/.dockerignore
 **/.env
 **/.git
 **/.gitignore

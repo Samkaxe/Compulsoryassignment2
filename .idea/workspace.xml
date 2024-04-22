@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e7330d7-a0de-44e0-b710-2fe4d13b1b0f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/patient-ui/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-ui/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/IMeasurementRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/IMeasurementRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/MeasurementRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/MeasurementRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/bin/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/ref/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/ref/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/refint/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/Debug/net7.0/refint/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/MeasurementController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/MeasurementController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementDatabase.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/bin/Debug/net7.0/MeasurementService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/measurement.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/measurement.db-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/MeasurementService.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/ref/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/ref/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/refint/MeasurementService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/Debug/net7.0/refint/MeasurementService.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientService/PatientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/PatientController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +38,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruger\Documents\GitHub\Compulsoryassignment2\patient-ui" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1713776666199</updated>
       <workItem from="1713776667694" duration="8422000" />
-      <workItem from="1713789201493" duration="4823000" />
+      <workItem from="1713789201493" duration="6317000" />
     </task>
     <servers />
   </component>
