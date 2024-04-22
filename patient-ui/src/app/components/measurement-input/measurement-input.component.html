@@ -1,0 +1,34 @@
+<form [formGroup]="measurementForm" (ngSubmit)="onSubmit()">
+  <div class="flex flex-col space-y-10"> <!-- Flexbox layout for spacing -->
+
+    <!-- Date Input with Angular Material -->
+    <mat-form-field appearance="fill">
+      <mat-label>Date</mat-label>
+      <input matInput type="datetime-local" formControlName="date" />
+    </mat-form-field>
+
+    <!-- Systolic Pressure Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Systolic</mat-label>
+      <input matInput type="number" formControlName="systolic" />
+    </mat-form-field>
+
+    <!-- Diastolic Pressure Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Diastolic</mat-label>
+      <input matInput type="number" formControlName="diastolic" />
+    </mat-form-field>
+
+    <!-- Patient SSN Input -->
+    <mat-form-field appearance="fill">
+      <mat-label>Patient SSN</mat-label>
+      <input matInput type="text" formControlName="patientSSN" placeholder="123-45-6789" />
+      <mat-icon matSuffix>verified_user</mat-icon> <!-- Icon at the end -->
+      <mat-hint *ngIf="!measurementForm.controls['patientSSN'].value">Enter a valid SSN</mat-hint> <!-- Hint text -->
+    </mat-form-field>
+
+    <!-- Submit Button with Angular Material -->
+    <button mat-raised-button color="primary" type="submit" [disabled]="!measurementForm.valid">Submit</button>
+
+  </div>
+</form>

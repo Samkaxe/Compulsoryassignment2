@@ -36,7 +36,19 @@ Log.Logger = new LoggerConfiguration()
 builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 builder.Services.AddDbContext<PatientDbContext>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", builder =>
+    {
+        builder.WithOrigins("http://localhost:4200") // Patient ui
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigins");
 
 using (var scope = app.Services.CreateScope()) 
 {
