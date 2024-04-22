@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {}
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,37 +53,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
         "projectName": "MeasurementDatabase",
-        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\Core\\Core.csproj"
+              "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\Core\\Core.csproj"
               }
             }
           }
@@ -148,37 +142,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
+    "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
         "projectName": "MeasurementService",
-        "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
-        "packagesPath": "C:\\Users\\charl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementService\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementService\\MeasurementService.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\charl\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
-                "projectPath": "C:\\Users\\charl\\RiderProjects\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
+              "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj": {
+                "projectPath": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\MeasurementDatabase\\MeasurementDatabase.csproj"
               }
             }
           }
@@ -253,7 +244,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

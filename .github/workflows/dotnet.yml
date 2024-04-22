@@ -41,8 +41,11 @@ jobs:
         
       - name: Push images to registry
         run: |
-            for image in $(docker-compose config --services); do
-              docker push publicaccount123/$image:latest
+            for image in $(docker-compose config --services); 
+            do
+              if [[ $image == *"publicaccount123"* ]];
+                  docker push your-dockerhub-username/$image:latest
+              fi
             done
 
 

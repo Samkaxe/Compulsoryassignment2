@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="patient" uuid="4f9c94fd-b82f-4f24-bf3f-e2335b3e3951">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>f3924453-5971-4220-afc0-26104d252245</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\charl\RiderProjects\Compulsoryassignment2\PatientDatabase\patient.db</jdbc-url>
@@ -17,7 +17,7 @@
       </libraries>
     </data-source>
     <data-source source="LOCAL" name="measurement" uuid="155a6987-ad6b-40aa-ae15-b107e7e5b46c">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>f3924453-5971-4220-afc0-26104d252245</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\charl\RiderProjects\Compulsoryassignment2\MeasurementDatabase\measurement.db</jdbc-url>
