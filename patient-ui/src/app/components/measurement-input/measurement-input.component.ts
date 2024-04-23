@@ -8,6 +8,9 @@ import { PatientService } from '../../services/patient.service';
 })
 export class MeasurementInputComponent implements OnInit {
   measurementForm: FormGroup; // Reactive form group
+  
+  minDate = new Date(2000, 0, 1); // January 1, 2000
+  maxDate = new Date(2030, 11, 31); // December 31, 2030
 
   constructor(
     private formBuilder: FormBuilder,

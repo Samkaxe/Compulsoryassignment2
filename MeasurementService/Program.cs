@@ -37,10 +37,25 @@ builder.Services.AddOpenTelemetry()
         }
     );
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigins", builder =>
+    {
+        builder.WithOrigins("http://localhost:8080")
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
+builder.Services.AddHttpClient("PatientService", client =>
+{
+    client.BaseAddress = new Uri("http://patient-service:80/"); // Base URL of the Patient microservice
+});
 
 
 var app = builder.Build();
+
+app.UseCors("AllowSpecificOrigins");
 
 using (var scope = app.Services.CreateScope()) 
 {

@@ -6,6 +6,6 @@ public interface IMeasurementRepository
 {
     List<Measurements> GetAllMeasurements();
     Measurements GetMeasurementById(int id);
-    void AddMeasurement(Measurements measurement);
+    Task AddMeasurement(Measurements measurement);
     void DeleteMeasurement(int id);
 }

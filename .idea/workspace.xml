@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e7330d7-a0de-44e0-b710-2fe4d13b1b0f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementDatabase/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementDatabase/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeasurementService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MeasurementService/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientDatabase/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PatientDatabase/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientDatabase/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PatientDatabase/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientService/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PatientService/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/PatientService/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-ui/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patient-ui/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,26 +18,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2fRvNKWtCNL7wFZm5tvexcd4X8N" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\patient-ui\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Bruger\\Documents\\GitHub\\Compulsoryassignment2\\patient-ui\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bruger\Documents\GitHub\Compulsoryassignment2\patient-ui" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,7 +58,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713776666199</updated>
-      <workItem from="1713776667694" duration="7098000" />
+      <workItem from="1713776667694" duration="8422000" />
+      <workItem from="1713789201493" duration="6317000" />
     </task>
     <servers />
   </component>

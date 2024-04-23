@@ -45,6 +45,13 @@ services:
       - 7001:80
     networks:
       - network
+        
+  patient-ui:
+    build:
+      context: .
+      dockerfile: patient-ui/Dockerfile
+    ports:
+      - 8080:8080
 
 networks:
   network:
