@@ -39,20 +39,14 @@ jobs:
       - name: Connect to DockerHub
         run: docker login -u publicaccount123 -p dckr_pat_mxlDyYHHTiDfkvhXWb0II2xOuRc
 
+
       - name: Push images to registry
         run: |
-          pushable_images=("patient-service" "measurement-service" "patient-ui")
-          
-          # Get running container names
-          running_containers=$(docker ps --format "{{.Names}}") 
-          
-          for container in $running_containers; do
-            image_name=$(docker inspect $container --format='{{.Config.Image}}') # Get image name
-            if [[ " ${pushable_images[@]} " =~ " ${image_name} " ]]; then  # Check if image is pushable
-              echo "Pushing image: $image_name"
-              docker tag $image_name publicaccount123/$image_name:latest # Tag the image
-              docker push publicaccount123/$image_name:latest
-            fi
+          services=$(docker-compose config --services)  
+          for image in $services; 
+          do
+            echo "Pushing image: $image"
+            docker push publicaccount123/$image:latest
           done 
 
 
