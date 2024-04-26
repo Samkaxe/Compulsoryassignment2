@@ -3,22 +3,22 @@ version: '3.8'
 services:
   
   #http://localhost:5342/
-  seq-server:
-    image: datalust/seq:latest
-    ports:
-      - "5341:5341"
-      - "5342:80"
-    environment:
-      - ACCEPT_EULA=Y
-    restart: unless-stopped
-  
-  # http://127.0.0.1:9411/zipkin/
-  zipkin:
-    image: openzipkin/zipkin
-    ports:
-      - "9411:9411"
-    networks:
-      - network
+#  seq-server:
+#    image: datalust/seq:latest
+#    ports:
+#      - "5341:5341"
+#      - "5342:80"
+#    environment:
+#      - ACCEPT_EULA=Y
+#    restart: unless-stopped
+#
+#  # http://127.0.0.1:9411/zipkin/
+#  zipkin:
+#    image: openzipkin/zipkin
+#    ports:
+#      - "9411:9411"
+#    networks:
+#      - network
   
   patient-service:
     build:
