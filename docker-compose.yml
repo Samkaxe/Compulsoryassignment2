@@ -24,7 +24,6 @@ services:
     build:
       context: .
       dockerfile: PatientService/Dockerfile
-    image: publicaccount123/patient-service
     labels:
       push-to-registry: true
     environment:
@@ -39,7 +38,6 @@ services:
     build:
       context: .
       dockerfile: MeasurementService/Dockerfile
-    image: publicaccount123/measurement-service
     labels:
       push-to-registry: true
     environment:
@@ -54,7 +52,6 @@ services:
     build:
       context: .
       dockerfile: patient-ui/Dockerfile
-    image: publicaccount123/patient-ui
     labels:
       push-to-registry: true
     ports:
