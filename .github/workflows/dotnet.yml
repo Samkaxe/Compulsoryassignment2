@@ -44,10 +44,13 @@ jobs:
           services=$(docker-compose config --services)
           for image in $services; 
           do
-          if docker inspect $image | grep -q '"push-to-registry": true'; then
-            docker tag $image publicaccount123/$image:latest 
-            docker push publicaccount123/$image:latest
-          fi
+            echo "Processing image: $image"  # Add for debugging
+            if docker inspect $image | grep -q '"push-to-registry": true'; then
+              docker tag $image publicaccount123/$image:latest 
+              docker push publicaccount123/$image:latest
+            else
+              echo "Skipping image: $image"   # Add for debugging
+            fi
           done 
 
 
