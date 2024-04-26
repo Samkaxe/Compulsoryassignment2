@@ -46,7 +46,7 @@ jobs:
           for image in $services; 
           do
             echo "Pushing image: $image"
-            docker tag $image publicaccount123/$image:latest  # Tag images correctly
+            docker tag $image publicaccount123/$image:latest
             docker push publicaccount123/$image:latest 
           done 
 
