@@ -45,12 +45,8 @@ jobs:
           services=$(docker-compose config --services)  
           for image in $services; 
           do
-            if docker inspect $image | grep -q '"push-to-registry": true'; then
-              echo "Pushing image: $image"
-              docker push publicaccount123/$image:latest
-            else
-              echo "Skipping image: $image (no push-to-registry label)"
-            fi
+            echo "Pushing image: $image"
+            docker push publicaccount123/$image:latest
           done 
 
 
