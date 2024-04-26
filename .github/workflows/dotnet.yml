@@ -48,8 +48,9 @@ jobs:
             if docker inspect $image | grep -q '"push-to-registry": true'; then
               echo "Pushing image: $image"
               docker push publicaccount123/$image:latest
-          else
-            echo "Skipping image: $image (no push-to-registry label)"
+            else
+              echo "Skipping image: $image (no push-to-registry label)"
+            fi
           done 
 
 
