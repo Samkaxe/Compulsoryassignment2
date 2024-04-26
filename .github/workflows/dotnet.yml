@@ -38,15 +38,13 @@ jobs:
         
       - name: Connect to DockerHub
         run: docker login -u publicaccount123 -p dckr_pat_mxlDyYHHTiDfkvhXWb0II2xOuRc
-        
+
+
       - name: Push images to registry
         run: |
-            for image in $(docker-compose config --services); 
-            do
-              if [[ $image == *"publicaccount123"* ]]; then
-                  docker push publicaccount123/$image:latest
-              fi
-            done
+          for image in $(docker images --format "{{.Repository}}:{{.Tag}}" | grep publicaccount123); do
+            docker push $image
+          done 
 
 
         
