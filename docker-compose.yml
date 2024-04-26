@@ -24,7 +24,7 @@ services:
     build:
       context: .
       dockerfile: PatientService/Dockerfile
-    image: publicaccount123/patient-service:latest
+    image: publicaccount123/patient-service
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80;http://+:443
@@ -37,7 +37,7 @@ services:
     build:
       context: .
       dockerfile: MeasurementService/Dockerfile
-    image: publicaccount123/measurement-service:latest
+    image: publicaccount123/measurement-service
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80;http://+:443
@@ -50,7 +50,7 @@ services:
     build:
       context: .
       dockerfile: patient-ui/Dockerfile
-    image: publicaccount123/patient-ui:latest
+    image: publicaccount123/patient-ui
     ports:
       - 8080:8080
 
