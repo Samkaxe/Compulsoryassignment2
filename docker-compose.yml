@@ -50,6 +50,7 @@ services:
     build:
       context: .
       dockerfile: patient-ui/Dockerfile
+    image: publicaccount123/patient-ui:latest
     ports:
       - 8080:8080
 
