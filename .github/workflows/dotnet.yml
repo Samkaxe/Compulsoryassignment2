@@ -38,20 +38,17 @@ jobs:
         
       - name: Connect to DockerHub
         run: docker login -u publicaccount123 -p dckr_pat_mxlDyYHHTiDfkvhXWb0II2xOuRc
+
         
       - name: Push images to registry
         run: |
-          services=$(docker-compose config --services)
-          for image in $services; 
+          services=$(docker-compose config --services)  # Get all service names
+          for image in $services;  # Loop through each service
           do
-            echo "Processing image: $image"
-            if docker inspect $image | grep -q '"push-to-registry": true'; then
-              docker tag $image publicaccount123/$image:latest 
-              docker push publicaccount123/$image:latest
-            else
-              echo "Skipping image: $image"   # Add for debugging
-            fi
-          done 
+            echo "Pushing image: $image"
+            docker tag $image publicaccount123/$image:latest  # Tag the image
+            docker push publicaccount123/$image:latest  # Push the image
+          done
 
 
         
