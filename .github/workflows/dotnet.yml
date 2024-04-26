@@ -42,7 +42,7 @@ jobs:
 
       - name: Push images to registry
         run: |
-          for image in $(docker images --format "{{.Repository}}:{{.Tag}}" | grep publicaccount123); do
+          for image in $(docker images --format "{{.Repository}}:{{.Tag}}"); do
             docker push $image
           done 
 
