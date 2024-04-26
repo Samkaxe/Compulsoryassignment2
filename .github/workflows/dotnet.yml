@@ -42,11 +42,8 @@ jobs:
 
       - name: Push images to registry
         run: |
-          services=$(docker-compose config --services)  
-          for image in $services; 
-          do
-            echo "Pushing image: $image"
-            docker push publicaccount123/$image:latest
+          for image in $(docker images --format "{{.Repository}}:{{.Tag}}" | grep publicaccount123); do
+            docker push $image
           done 
 
 
