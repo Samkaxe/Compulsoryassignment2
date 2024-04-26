@@ -41,12 +41,14 @@ jobs:
         
       - name: Push images to registry
         run: |
-            for image in $(docker-compose config --services); 
-            do
-              if [[ $image == *"publicaccount123"* ]]; then
-                  docker push publicaccount123/$image:latest
-              fi
-            done
+          services=$(docker-compose config --services)
+          for image in $services; 
+          do
+          if docker inspect $image | grep -q '"push-to-registry": true'; then
+            docker tag $image publicaccount123/$image:latest 
+            docker push publicaccount123/$image:latest
+          fi
+          done 
 
 
         

@@ -25,6 +25,8 @@ services:
       context: .
       dockerfile: PatientService/Dockerfile
     image: publicaccount123/patient-service
+    labels:
+      push-to-registry: true
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80;http://+:443
@@ -38,6 +40,8 @@ services:
       context: .
       dockerfile: MeasurementService/Dockerfile
     image: publicaccount123/measurement-service
+    labels:
+      push-to-registry: true
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80;http://+:443
@@ -51,6 +55,8 @@ services:
       context: .
       dockerfile: patient-ui/Dockerfile
     image: publicaccount123/patient-ui
+    labels:
+      push-to-registry: true
     ports:
       - 8080:8080
 
