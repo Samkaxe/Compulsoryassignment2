@@ -42,13 +42,13 @@ jobs:
         
       - name: Push images to registry
         run: |
-          services=$(docker-compose config --services)  # Get all service names
-          for image in $services;  # Loop through each service
+          services=$(docker-compose config --services)  
+          for image in $services; 
           do
             echo "Pushing image: $image"
-            docker tag $image publicaccount123/$image:latest  # Tag the image
-            docker push publicaccount123/$image:latest  # Push the image
-          done
+            docker tag $image publicaccount123/$image:latest  # Tag images correctly
+            docker push publicaccount123/$image:latest 
+          done 
 
 
         
