@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PatientService } from '../../services/patient.service';
+import {LocationService} from "../../services/location.service";
 
 @Component({
   selector: 'app-patient-input',
@@ -8,13 +9,14 @@ import { PatientService } from '../../services/patient.service';
 })
 export class MeasurementInputComponent implements OnInit {
   measurementForm: FormGroup; // Reactive form group
-  
+
   minDate = new Date(2000, 0, 1); // January 1, 2000
   maxDate = new Date(2030, 11, 31); // December 31, 2030
 
   constructor(
     private formBuilder: FormBuilder,
-    private patientService: PatientService // Service to handle form data
+    private patientService: PatientService, // Service to handle form data
+    protected locationService: LocationService
   ) {}
 
   ngOnInit(): void {

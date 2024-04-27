@@ -34,7 +34,9 @@
     </mat-form-field>
 
     <!-- Submit Button with Angular Material -->
-    <button mat-raised-button color="primary" type="submit" [disabled]="!measurementForm.valid">Submit</button>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!measurementForm.valid && locationService.isClientLocationDenmark">
+      {{locationService.isClientLocationDenmark ? 'Upload measurement' : 'Service is unavailable outside of denmark'}}
+    </button>
 
   </div>
 
