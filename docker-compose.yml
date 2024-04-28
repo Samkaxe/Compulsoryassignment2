@@ -54,6 +54,31 @@ services:
     ports:
       - 8080:8080
 
+  party-server:
+    image: featurehub/party-server:latest
+    user: 999:999
+    restart: always
+    volumes:
+      - ./app-config:/etc/app-config
+    ports:
+      - 8085:8085
+      - 8701:8701
+    depends_on:
+      - "db"
+  db:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+      - featurehub-ps-db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  featurehub-ps-db:
+
 networks:
   network:
     name: network

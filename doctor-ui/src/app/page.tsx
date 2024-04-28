@@ -4,7 +4,7 @@ import { use, useEffect, useState } from "react";
 import CreatePatientModal from "./components/CreatePatientModal";
 import Table from "./components/Table";
 
-interface Patient {
+export interface Patient {
   name: string;
   email: string;
   ssn: string;
@@ -42,11 +42,19 @@ export default function Home() {
       setPatients(prev => [...prev, data]);
     }
   }
+
+  const deletePatient = async (ssn: string) => {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_PATIENTS_BASE_API_URL}/api/patient/${ssn}`, {
+      method: "DELETE",
+    });
+    if (response.ok) {
+      setPatients(prev => prev.filter(patient => patient.ssn !== ssn));
+    }
+  }
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      {/* <button onClick={() => setIsOpen(true)}>click</button> */}
         <CreatePatientModal isOpen={isOpen} onClose={() => setIsOpen(false)} onSubmit={createPatient}/>
-        <Table items={patients} openModal={() => setIsOpen(true)}/>
+        <Table items={patients} openModal={() => setIsOpen(true)} deletePatient={deletePatient}/>
     </main>
   );
 }

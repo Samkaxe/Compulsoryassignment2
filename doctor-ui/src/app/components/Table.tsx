@@ -1,13 +1,5 @@
+import { useFeatureHub } from "@/providers/FeatureFlagProvider";
 import Link from "next/link";
-
-const people = [
-  {
-    name: "Lindsay Walton",
-    title: "Front-end Developer",
-    email: "lindsay.walton@example.com",
-    role: "Member",
-  },
-];
 
 interface TableProps {
   items: {
@@ -17,9 +9,13 @@ interface TableProps {
     measurements: [];
   }[];
   openModal: () => void;
+  deletePatient: (ssn: string) => void;
 }
 
-export default function Table({ items, openModal }: TableProps) {
+export default function Table({ items, openModal, deletePatient }: TableProps) {
+  const showCreateButton = useFeatureHub()?.getFlag("create_patient");
+  const showDeleteButton = useFeatureHub()?.getFlag("delete_patient");
+
   return (
     <div className="px-4 sm:px-6 lg:px-8 w-full">
       <div className="sm:flex sm:items-center">
@@ -29,13 +25,15 @@ export default function Table({ items, openModal }: TableProps) {
           </h1>
         </div>
         <div className="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
-          <button
-            type="button"
-            onClick={openModal}
-            className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
-            Add user
-          </button>
+          {showCreateButton && (
+            <button
+              type="button"
+              onClick={openModal}
+              className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Add user
+            </button>
+          )}
         </div>
       </div>
       <div className="mt-8 flow-root">
@@ -65,19 +63,25 @@ export default function Table({ items, openModal }: TableProps) {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-300">
-                {items.map((item, index) => (
-                  <tr key={index}>
-                    <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
-                      <Link href={`patient/${item.ssn}`}>{item.name}</Link>
-                    </td>
-                    <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
-                      {item.email}
-                    </td>
-                    <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
-                      {item.ssn}
-                    </td>
-                  </tr>
-                ))}
+                {items &&
+                  items.map((item, index) => (
+                    <tr key={index}>
+                      <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
+                        <Link href={`patient/${item.ssn}`}>{item.name}</Link>
+                      </td>
+                      <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
+                        {item.email}
+                      </td>
+                      <td className="py-3.5 pl-4 pr-3 text-sm text-gray-900 sm:pl-0">
+                        {item.ssn}
+                      </td>
+                      {showDeleteButton && (
+                        <td>
+                          <button className="text-red-500" onClick={() => deletePatient(item.ssn)}>Delete</button>
+                        </td>
+                      )}
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </div>
