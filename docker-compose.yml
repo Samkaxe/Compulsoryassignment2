@@ -76,6 +76,15 @@ services:
     ports:
       - 5432:5432
 
+  doctor-ui:
+    build:
+      context: ./doctor-ui
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
 volumes:
   featurehub-ps-db:
 
