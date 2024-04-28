@@ -80,6 +80,7 @@ services:
     build:
       context: ./doctor-ui
       dockerfile: Dockerfile
+    image: publicaccount123/doctor-ui:latest
     ports:
       - "3000:3000"
     environment:
